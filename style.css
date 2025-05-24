@@ -1,0 +1,144 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  font-family: "Orbitron", sans-serif;
+  font-size:2rem;
+  font-weight: 600;
+}
+
+.container{
+  width:50%;
+  margin:auto;
+  height: 100vh;
+  background-color:#9FC93B;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  padding:1rem;
+}
+
+.game-container{
+  min-height: 94vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.computer-avatar,.player-avatar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:2rem;
+}
+
+.computer-hand-wrapper,
+.player-hand-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border:2px dotted #000;
+  height:16rem;
+  margin:1rem 0;
+}
+.computer-hand,.player-hand{
+  font-size:12rem;
+}
+
+.midline{
+  width: 100%;
+  min-height:6rem;
+  background-color: #F2C244;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.player-choices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top:1rem;
+  gap:2rem;
+}
+
+.player-choices div{
+  background-color:#EFEFEF;
+  padding:1rem;
+  border-radius: .5rem;
+}
+
+.player-choice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-choices p:first-child{
+  font-size:8rem;
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media screen and (max-width:1000px) {
+  body{
+    font-size:1.5rem;
+  }
+}
+
+@media screen and (max-width:860px) {
+  .player-choices p:first-child{
+    font-size:5rem;
+    font-weight: bold;
+  }
+  body{
+    font-size:1.5rem;
+    font-weight:800;
+  }
+  .computer-hand,.player-hand{
+    font-size:10rem;
+  }
+}
+
+@media screen and (max-width:630px) {
+  .container{
+    width:100%;
+  }
+  .game-container{
+    min-height: 90vh;
+  }
+  .header{
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+  }
+  .player-choices{
+    gap:1rem;
+  }
+  .player-choices p:first-child{
+    font-size:5rem;
+    font-weight: bold;
+  }
+  .computer-hand-wrapper,
+  .player-hand-wrapper{
+    height:10rem;
+  }
+  .computer-hand,.player-hand{
+    font-size:6rem;
+  }
+
+  
+}

@@ -5,9 +5,63 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div class="container">
+      <div class="header">
+        <p>2024
+          &copy;
+          <a href="https://www.linkedin.com/in/davis-muchiri-b4991b251/" target="_blank">Davis Muchiri</a>
+        </p>
+        <div class="score-board">
+          <span>Computer</span>
+          <span class="computer-score">0</span>
+          <span>Player</span>
+          <span class="player-score">0</span>
+        </div>
+      </div>
+      
+      <div class="game-container">
+        <div class="computer-avatar">
+          <p>Computer</p>
+          <div class="computer-hand-wrapper">
+            <p class="computer-hand">✌️</p>
+          </div>
+        </div>
+        <div class="midline">
+          <p class="play-status">
+            Make your move!
+          </p>
+        </div>
+        <div class="player-avatar">
+          <p>Player</p>
+          <div class="player-hand-wrapper">
+            <p class="player-hand">✌️</p>
+          </div>
+        </div>
+
+        <div class="player-choices">
+          <div class="player-choice rock">
+            <p>✊</p>
+            <p>Rock</p>
+          </div>
+          <div class="player-choice paper">
+            <p>✋</p>
+            <p>Paper</p>
+          </div>
+          <div class="player-choice scissors">
+            <p>✌️</p>
+            <p>Scissors</p>
+          </div>
+        </div>
+      </div>
+
+   
+
+    </div>
   </body>
 </html>
