@@ -10,7 +10,7 @@ html{
 
 body{
   font-family: "Press Start 2P", system-ui;
-  font-size:1.5rem;
+  font-size:1.2rem;
 }
 
 .container{
@@ -85,24 +85,35 @@ body{
   flex-direction: column;
   align-items: center;
 }
+.player-choice:hover{
+  cursor: pointer;
+}
 
 .player-choices p:first-child{
   font-size:8rem;
 }
 
-/* Media Queries */
-@media screen and (max-width:1000px) {
-  body{
-    font-size:1.5rem;
-  }
+#reset{
+  margin:3rem;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
+#reset:hover{
+  background-color: #F2C244;
+  cursor: pointer;
+}
+
+/* Media Queries */
 @media screen and (max-width:860px) {
+  .container{
+    width:100%;
+  }
   .player-choices p:first-child{
     font-size:5rem;
   }
   body{
-    font-size:1.5rem;
+    font-size:1.2rem;
   }
   .computer-hand,.player-hand{
     font-size:10rem;
