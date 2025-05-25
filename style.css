@@ -1,32 +1,32 @@
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-  font-size:62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
+body {
   font-family: "Press Start 2P", system-ui;
-  font-size:1.2rem;
+  font-size: 1.2rem;
 }
 
-.container{
-  width:50%;
-  margin:auto;
+.container {
+  width: 50%;
+  margin: auto;
   height: 100vh;
-  background-color:#9FC93B;
+  background-color: #9fc93b;
 }
 
-.header{
-  display:flex;
+.header {
+  display: flex;
   justify-content: space-between;
-  padding:1rem;
+  padding: 1rem;
 }
 
-.game-container{
+.game-container {
   min-height: 94vh;
   display: flex;
   flex-direction: column;
@@ -34,117 +34,119 @@ body{
   justify-content: center;
 }
 
-.computer-avatar,.player-avatar{
+.computer-avatar,
+.player-avatar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:2rem;
+  margin: 2rem;
 }
 
 .computer-hand-wrapper,
-.player-hand-wrapper{
+.player-hand-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  border:2px dotted #000;
-  height:16rem;
-  margin:1rem 0;
+  border: 2px dotted #000;
+  height: 16rem;
+  margin: 1rem 0;
 }
-.computer-hand,.player-hand{
-  font-size:12rem;
+.computer-hand,
+.player-hand {
+  font-size: 12rem;
 }
 
-.midline{
+.midline {
   width: 100%;
-  min-height:6rem;
-  background-color: #F2C244;
+  min-height: 6rem;
+  background-color: #f2c244;
   display: flex;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
 }
 
-.player-choices{
+.player-choices {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top:1rem;
-  gap:2rem;
+  margin-top: 1rem;
+  gap: 2rem;
 }
 
-.player-choices div{
-  background-color:#EFEFEF;
-  padding:1rem;
-  border-radius: .5rem;
+.player-choices div {
+  background-color: #efefef;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
-.player-choice{
+.player-choice {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.player-choice:hover{
+.player-choice:hover {
   cursor: pointer;
 }
 
-.player-choices p:first-child{
-  font-size:8rem;
+.player-choices p:first-child {
+  font-size: 8rem;
 }
 
-#reset{
-  margin:3rem;
+#reset {
+  margin: 3rem;
   padding: 1rem;
   border-radius: 5px;
 }
 
-#reset:hover{
-  background-color: #F2C244;
+#reset:hover {
+  background-color: #f2c244;
   cursor: pointer;
 }
 
 /* Media Queries */
-@media screen and (max-width:860px) {
-  .container{
-    width:100%;
+@media screen and (max-width: 860px) {
+  .container {
+    width: 100%;
   }
-  .player-choices p:first-child{
-    font-size:5rem;
+  .player-choices p:first-child {
+    font-size: 5rem;
   }
-  body{
-    font-size:1.2rem;
+  body {
+    font-size: 1.2rem;
   }
-  .computer-hand,.player-hand{
-    font-size:10rem;
+  .computer-hand,
+  .player-hand {
+    font-size: 10rem;
   }
 }
 
-@media screen and (max-width:630px) {
-  .container{
-    width:100%;
+@media screen and (max-width: 630px) {
+  .container {
+    width: 100%;
   }
-  .game-container{
+  .game-container {
     min-height: 90vh;
   }
-  .header{
+  .header {
     flex-direction: column;
     align-items: center;
-    gap:1rem;
+    gap: 1rem;
   }
-  .player-choices{
-    gap:1rem;
+  .player-choices {
+    gap: 1rem;
   }
-  .player-choices p:first-child{
-    font-size:5rem;
+  .player-choices p:first-child {
+    font-size: 5rem;
   }
   .computer-hand-wrapper,
-  .player-hand-wrapper{
-    height:10rem;
+  .player-hand-wrapper {
+    height: 10rem;
   }
-  .computer-hand,.player-hand{
-    font-size:6rem;
+  .computer-hand,
+  .player-hand {
+    font-size: 6rem;
   }
-
-  
 }
