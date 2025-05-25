@@ -16,7 +16,7 @@ body {
 .container {
   width: 50%;
   margin: auto;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #9fc93b;
 }
 
